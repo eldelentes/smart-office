@@ -1,0 +1,70 @@
+.on {
+	.userCard .avatarContainer:before {
+		background: $on-color;
+	}
+}
+
+.off {
+	.userCard .avatarContainer:before {
+		background: $off-color;
+	}
+}
+
+.remote {
+	.userCard .avatarContainer:before {
+		background: $brand-color;
+	}
+}
+
+.userCard {
+	@extend .box;
+	display: inline-block;
+	padding: px-to-rems(20);
+	text-align: center;
+	width: 25%;
+	margin: 0.5%;
+	transition: all 0.2s ease;
+
+	.avatarContainer {
+		position: relative;
+	}
+
+	.avatarContainer:before {
+		border-radius: 50%;
+		content: '';
+		display: block;
+		padding: px-to-rems(12);
+		position: absolute;
+		right: px-to-rems(10);
+		top: px-to-rems(25);
+		z-index: 1;
+	}
+
+	&__name {
+		font-weight: 500;
+		margin: px-to-rems(10) 0;
+		transition: all 0.2s ease;
+	}
+
+	&:hover {
+		box-shadow: 0 px-to-rems(10) px-to-rems(20) rgba($text-color, 0.2);
+
+		.userCard__name {
+			color: $brand-color;
+		}
+
+		.avatarContainer:before {
+			animation: pulse 1s ease infinite;
+		}
+	}
+}
+
+@keyframes pulse {
+	50% {
+		transform: scale(0.8);
+	}
+
+	0% ,100% {
+		text-transform: scale(1);
+	}
+}

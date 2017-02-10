@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Offices</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/icalicons.min.css">
+	</head>
+	<body class="page">
+		<div class="page__container row-flex">
+			<header class="mainHeader col-1 text-center">
+				<img src="images/logo.png">
+				<nav class="mainHeader__nav align-flex horizontal is-column">
+					<a class="tab" href="#" data-name="Logs">
+						<i class="tabIcon logs"></i>
+					</a>
+					<a class="tab is-active" href="#" data-name="Users">
+						<i class="tabIcon users is-active"></i>
+					</a>
+					<a class="tab" href="#" data-name="Stats">
+						<i class="tabIcon stats"></i>
+					</a>
+					<a class="tab" href="#" data-name="My Office">
+						<i class="tabIcon office"></i>
+					</a>
+				</nav>
+			</header>
+			<main class="mainContent col-10 offset-1">
+				<header class="statusHeader text-center">
+					<span class="statusHeader__date pill"><i class="il il-clock"></i>ENERO, 18 2016</span>
+					<div class="pull-right">
+						<label>Status</label>
+						<span class="pill"><i class="statusDot active"></i>ON</span>
+					</div>
+				</header>
+				<section class="singleView align-flex vertical is-column">
+					<div class="infoContainer align-flex between vertical">
+						<div class="align-flex vertical">
+							<img src="images/avatar.png" class="avatar med">
+							<div>
+								<h3 class="infoContainer__title">Eduardo Higareda</h3>
+								<h4 class="infoContainer__subtitle">Visual Designer</h4>
+							</div>
+						</div>
+						<div class="align-flex">
+							<div class="infoContainer__data">
+								<h4 class="infoContainer__label">Llegada Estimada</h4>
+								<span class="infoContainer__number on">16:22</span>
+							</div>
+							<div class="infoContainer__data">
+								<h4 class="infoContainer__label">Llegada Estimada</h4>
+								<span class="infoContainer__number off">16:22</span>
+							</div>
+						</div>
+					</div>
+					<section class="infoContainer align-flex between vertical row-flex">
+						<div class="text-center col-6">
+							<h4 class="infoContainer__label">Arrival Time</h4>
+						</div>
+						<div class="text-center col-6">
+							<h4 class="infoContainer__label">Leave Time</h4>
+						</div>
+					</section>
+				</section>
+			</main>
+
+		</div>
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  		<script src="js/app.js" type="text/javascript"></script>
+	</body>
+</html>

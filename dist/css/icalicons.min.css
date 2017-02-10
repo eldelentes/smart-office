@@ -1,0 +1,314 @@
+.il {
+  display: inline-block;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: inherit;
+  font-variant: normal;
+  font: normal normal normal 16px/1 icalicons;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-rendering: auto;
+  text-transform: none;
+  vertical-align: middle;
+  width: 1em; }
+
+.il-shadow {
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); }
+
+@font-face {
+  font-family: 'icalicons';
+  src: url("../fonts/icalicons.eot?60979525");
+  src: url("../fonts/icalicons.eot?60979525#iefix") format("embedded-opentype"), url("../fonts/icalicons.woff2?60979525") format("woff2"), url("../fonts/icalicons.woff?60979525") format("woff"), url("../fonts/icalicons.ttf?60979525") format("truetype"), url("../fonts/icalicons.svg?60979525#icalicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.il-dropbox::before {
+  content: '\e000'; }
+
+.il-paypal::before {
+  content: '\e001'; }
+
+.il-linkedin::before {
+  content: '\e002'; }
+
+.il-google-plus::before {
+  content: '\e003'; }
+
+.il-github::before {
+  content: '\e004'; }
+
+.il-ellipsis::before {
+  content: '\e005'; }
+
+.il-arrow-left::before {
+  content: '\e006'; }
+
+.il-mic::before {
+  content: '\e007'; }
+
+.il-arrow-right::before {
+  content: '\e008'; }
+
+.il-ribbon::before {
+  content: '\e009'; }
+
+.il-pin::before {
+  content: '\e00a'; }
+
+.il-image::before {
+  content: '\e00b'; }
+
+.il-conversation::before {
+  content: '\e00c'; }
+
+.il-cup::before {
+  content: '\e00d'; }
+
+.il-comment::before {
+  content: '\e00e'; }
+
+.il-dialog::before {
+  content: '\e00f'; }
+
+.il-notification::before {
+  content: '\e010'; }
+
+.il-grid::before {
+  content: '\e011'; }
+
+.il-refresh::before {
+  content: '\e012'; }
+
+.il-email::before {
+  content: '\e013'; }
+
+.il-calendar::before {
+  content: '\e014'; }
+
+.il-camera::before {
+  content: '\e015'; }
+
+.il-controls::before {
+  content: '\e016'; }
+
+.il-envelope::before {
+  content: '\e017'; }
+
+.il-card::before {
+  content: '\e018'; }
+
+.il-clock::before {
+  content: '\e019'; }
+
+.il-layers::before {
+  content: '\e01a'; }
+
+.il-money::before {
+  content: '\e01b'; }
+
+.il-location::before {
+  content: '\e01c'; }
+
+.il-url::before {
+  content: '\e01d'; }
+
+.il-brightness::before {
+  content: '\e01e'; }
+
+.il-videocamera::before {
+  content: '\e01f'; }
+
+.il-basket::before {
+  content: '\e020'; }
+
+.il-market::before {
+  content: '\e021'; }
+
+.il-pie::before {
+  content: '\e022'; }
+
+.il-menu::before {
+  content: '\e023'; }
+
+.il-arrow-up::before {
+  content: '\e024'; }
+
+.il-arrow-down::before {
+  content: '\e025'; }
+
+.il-cart::before {
+  content: '\e026'; }
+
+.il-inbox::before {
+  content: '\e027'; }
+
+.il-eye::before {
+  content: '\e028'; }
+
+.il-tag::before {
+  content: '\e029'; }
+
+.il-moon::before {
+  content: '\e02a'; }
+
+.il-folder::before {
+  content: '\e02b'; }
+
+.il-house::before {
+  content: '\e02c'; }
+
+.il-compass::before {
+  content: '\e02d'; }
+
+.il-cog::before {
+  content: '\e02e'; }
+
+.il-cloud::before {
+  content: '\e02f'; }
+
+.il-world::before {
+  content: '\e030'; }
+
+.il-contrast::before {
+  content: '\e031'; }
+
+.il-heart::before {
+  content: '\e032'; }
+
+.il-pencil::before {
+  content: '\e033'; }
+
+.il-dashboard::before {
+  content: '\e034'; }
+
+.il-thumbs::before {
+  content: '\e035'; }
+
+.il-book::before {
+  content: '\e036'; }
+
+.il-search::before {
+  content: '\e037'; }
+
+.il-music::before {
+  content: '\e038'; }
+
+.il-bell::before {
+  content: '\e039'; }
+
+.il-bucket::before {
+  content: '\e03a'; }
+
+.il-tablet::before {
+  content: '\e03b'; }
+
+.il-add-user::before {
+  content: '\e03c'; }
+
+.il-mobile::before {
+  content: '\e03d'; }
+
+.il-small-arrow-up::before {
+  content: '\e03e'; }
+
+.il-small-arrow-right::before {
+  content: '\e03f'; }
+
+.il-small-arrow-left::before {
+  content: '\e040'; }
+
+.il-user::before {
+  content: '\e041'; }
+
+.il-users::before {
+  content: '\e042'; }
+
+.il-box::before {
+  content: '\e043'; }
+
+.il-dribbble::before {
+  content: '\e044'; }
+
+.il-small-arrow-down::before {
+  content: '\e800'; }
+
+.il-select::before {
+  content: '\e801'; }
+
+.il-triangle-down::before {
+  content: '\e802'; }
+
+.il-triangle-up::before {
+  content: '\e803'; }
+
+.il-attachment::before {
+  content: '\e804'; }
+
+.il-lock::before {
+  content: '\e805'; }
+
+.il-unlock::before {
+  content: '\e806'; }
+
+.il-flag::before {
+  content: '\e807'; }
+
+.il-drop::before {
+  content: '\e808'; }
+
+.il-file::before {
+  content: '\e809'; }
+
+.il-facebook::before {
+  content: '\e80a'; }
+
+.il-twitter::before {
+  content: '\e80b'; }
+
+.il-youtube::before {
+  content: '\e80c'; }
+
+.il-behance::before {
+  content: '\e80d'; }
+
+.il-instagram::before {
+  content: '\e80e'; }
+
+.il-2x {
+  font-size: 200%; }
+
+.il-3x {
+  font-size: 300%; }
+
+.il-4x {
+  font-size: 400%; }
+
+.il-spin {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.il-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.il-flip-vertical {
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1); }

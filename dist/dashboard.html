@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Offices</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/icalicons.min.css">
+	</head>
+	<body class="page">
+		<div class="page__container row-flex">
+			<header class="mainHeader col-1 text-center">
+				<div class="logo">
+					<svg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37"><g fill="none"><g stroke-width="10"><path id="logoRight" d="M24.6 5.8C31.8 5.8 37.6 11.6 37.6 18.8 37.6 25.9 31.8 31.8 24.6 31.8"/><path id="logoLeft" d="M18 32C10.8 32 5 26.2 5 19 5 11.8 10.8 6 18 6"/></g></g></svg>
+				</div>
+				<nav class="mainHeader__nav align-flex horizontal is-column">
+					<a class="tab is-active" href="#" data-name="Logs">
+						<i class="tabIcon logs is-active"></i>
+					</a>
+					<a class="tab" href="#" data-name="Users">
+						<i class="tabIcon users"></i>
+					</a>
+					<a class="tab" href="#" data-name="Stats">
+						<i class="tabIcon stats"></i>
+					</a>
+					<a class="tab" href="#" data-name="My Office">
+						<i class="tabIcon office"></i>
+					</a>
+				</nav>
+			</header>
+			<main class="mainContent col-10 offset-1">
+				<header class="statusHeader text-center">
+					<span class="statusHeader__date pill"><i class="il il-clock"></i>ENERO, 18 2016</span>
+					<div class="pull-right">
+						<label>Status</label>
+						<span class="pill update" data-tooltip="Last Update: 10 Minutes Ago"><i class="statusDot active"></i>ON</span>
+					</div>
+				</header>
+				<section class="content">
+					<div>
+						<h2 class="section__title">Logs</h2>
+					</div>
+					<section class="table">
+						<header class="table__header">
+							<div class="table__column">
+								<h3 class="table__label">Member</h3>
+							</div>
+							<div class="table__column">
+								<h3 class="table__label">Status</h3>
+							</div>
+							<div class="table__column">
+								<h3 class="table__label">Time</h3>
+							</div>
+						</header>
+						<div class="table__data">
+							<div class="table__row">
+								<div class="table__column">
+									<img class="avatar mini" src="images/avatar.png">
+									<h3 class="username">Miguel García</h3>
+								</div>
+								<div class="table__column">
+									<div class="pill on">Arrived</div>
+
+								</div>
+								<div class="table__column">
+									<span><i class="il il-clock"></i>14:08</span>
+								</div>
+								<div class="table__column">
+									<a href="#">View Profile</a>
+								</div>
+							</div>
+							<div class="table__row">
+								<div class="table__column">
+									<img class="avatar mini" src="images/avatar.png">
+									<h3 class="username">Miguel García</h3>
+								</div>
+								<div class="table__column">
+									<div class="pill off">Leave</div>
+
+								</div>
+								<div class="table__column">
+									<span><i class="il il-clock"></i>14:08</span>
+								</div>
+								<div class="table__column">
+									<a href="#">View Profile</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</main>
+		</div>
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  		<script src="js/app.js" type="text/javascript"></script>
+	</body>
+</html>

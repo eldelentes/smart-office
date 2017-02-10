@@ -1,0 +1,160 @@
+@import 'alom/base';
+@import 'variables';
+@import 'pages/landing';
+@import 'pages/users';
+@import 'pages/singleView';
+@import 'components/navigation';
+@import 'components/table';
+@import 'components/alerts';
+@import 'components/usersCards';
+@import 'components/infoContainer';
+
+body {
+	background: $bg-color;
+	color: $text-color;
+	font-family: 'Roboto', sans-serif;
+}
+
+.fullPage {
+	min-height: 100vh;
+}
+
+.button {
+	border-radius: px-to-rems(100);
+	font-size: px-to-ems(14);
+	padding: px-to-rems(20) px-to-rems(40);
+	transition: all 0.2s ease-in;
+
+	&.small {
+		padding: px-to-rems(10) px-to-rems(20);
+	}
+
+	&.action {
+		background: $brand-color;
+		color: #fff;
+
+		&:hover {
+			background: lighten($brand-color, 5%);
+			box-shadow: 0 px-to-rems(10) px-to-rems(20) rgba(0,0,100,0.2);
+			transform: translateY(-5%);
+		}
+
+		&:active {
+			background: darken($brand-color, 5%);
+			transform: translateY(5%);
+		}
+	}
+}
+
+.box {
+	background: #fff;
+	border: 1px solid #ECECEC;
+	border-radius: px-to-rems(2);
+}
+
+
+.page {
+	padding: px-to-rems(50) 0;
+
+	&__container {
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+.pill {
+	background: rgba(222,231,241,0.42);
+	border-radius: px-to-rems(100);
+	display: inline-block;
+	font-size: px-to-ems(14);
+	font-weight: 600;
+	min-width: px-to-rems(70);
+	padding: px-to-rems(6) px-to-rems(10);
+	text-align: center;
+
+	&.on {
+		background: rgba($on-color, 0.1);
+		color: darken($on-color, 10%);
+	}
+
+	&.off {
+		background: rgba($off-color, 0.1);
+		color: darken($off-color, 10%);
+	}
+}
+
+.statusDot {
+	background: #7ED321;
+	border-radius: 50%;
+	display: inline-block;
+	padding: px-to-rems(5);
+	margin-right: px-to-rems(10);
+}
+
+.section {
+	&__title {
+		font-size: px-to-ems(32);
+		font-weight: 300;
+		padding: px-to-rems(20) 0;
+	}
+}
+
+.avatar {
+	width: px-to-rems(160);
+
+	&.mini {
+		width: px-to-rems(40);
+	}
+
+	&.med {
+		width: px-to-rems(80);
+	}
+}
+
+.logo:hover {
+	transform: rotate(10deg);
+	transition: all 0.2s ease;
+}
+
+.logo:hover #logoLeft {
+	transform: translateY(-20%);
+}
+
+.logo:hover #logoRight {
+	transform: translateY(20%);
+}
+
+#logoLeft {
+	stroke: #3D75ED;
+	transition: all 0.2s ease;
+}
+
+#logoRight {
+	stroke: #DBA1FF;
+	transition: all 0.2s ease;
+}
+
+.update {
+	position: relative;
+
+	&:after {
+		background: rgba($brand-color, 0.1);
+		border-radius: px-to-rems(4);
+		color: $brand-color;
+		content: attr(data-tooltip);
+		font-size: px-to-ems(12);
+		left: 0;
+		min-width: px-to-rems(200);
+		opacity: 0;
+		padding: px-to-rems(12);
+		position: absolute;
+		top: -5px;
+		transform: translateX(-100%);
+		transition: all 0.2s ease;
+	}
+
+	&:hover:after {
+		opacity: 1;
+		transform: translateX(-130%);
+	}
+}

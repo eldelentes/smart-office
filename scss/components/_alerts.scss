@@ -1,0 +1,24 @@
+.alert {
+	background: $brand-color;
+	text-align: center;
+	padding: px-to-rems(20);
+	border-radius: px-to-rems(5);
+	position: relative;
+
+	&__name {
+		color: #fff;
+		font-weight: 600;
+	}
+
+	&__content {
+		color: rgba(#fff,0.8);
+		margin: px-to-rems(10) 0;
+	}
+
+	&__close {
+		color: #fff;
+		position: absolute;
+		top: px-to-rems(10);
+		right: px-to-rems(10);
+	}
+}

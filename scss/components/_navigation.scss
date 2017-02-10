@@ -1,0 +1,62 @@
+.mainHeader {
+	&__nav {
+		margin: px-to-rems(20) 0;
+		
+		.tab {
+			display: block;
+			padding: px-to-rems(20) 0;
+			position: relative;
+		}
+	}
+
+	.tab:after {
+		background: #fff;
+		border-radius: px-to-rems(4);
+		content: attr(data-name);
+		display: inline-block;
+		font-size: px-to-ems(14);
+		opacity: 0;
+		padding: px-to-rems(10);
+		position: absolute;
+		top: 50%;
+		transform: translateX(px-to-rems(30))translateY(-50%);		
+		transition: all 0.2s ease;
+		white-space: nowrap;
+	}
+
+	.tab:hover:after,
+	.tab.is-active:after {
+		opacity: 1;
+		transform: translateX(px-to-rems(20))translateY(-50%);			
+	}
+}
+
+.tabIcon {
+	background: url(../images/icons.svg);
+	display: inline-block;
+	height: px-to-rems(20);
+	width: px-to-rems(20);
+}
+
+$nav-icons: "logs" "users" "stats" "office";
+$iconWidth: 22;
+$iconHeight: 21;
+
+@each $icon in $nav-icons {
+    $i: index($nav-icons, $icon);
+    .#{$icon} { 
+        @if $i > 1 {
+        	background-position: -(($i - 1) * $iconWidth)+px 0;
+	        &:hover,
+	        &.is-active {
+	        	background-position: -(($i - 1) * $iconWidth)+px px-to-rems($iconHeight);
+	        }
+        } @else {
+        	background-position: -(0 * $iconWidth)+px 0;
+	        &:hover,
+	        &.is-active {
+	        	background-position: -(0 * $iconWidth)+px px-to-rems($iconHeight);
+	        }	
+        }
+    }
+}

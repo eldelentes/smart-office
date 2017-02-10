@@ -1,0 +1,41 @@
+.infoContainer {
+	@extend .box;
+	padding: px-to-rems(20) px-to-rems(40);
+
+	&__title {
+		font-size: px-to-ems(32)
+	}
+
+	&__subtitle {
+		opacity: 0.5;
+	}
+
+	&__label {
+		font-size: px-to-ems(14);
+		margin-bottom: px-to-rems(4);
+	}
+
+	&__number {
+		font-size: px-to-ems(32);
+
+		&.off {
+			color: $off-color;
+		}
+
+		&.on {
+			color: $on-color;
+		}
+	}
+
+	&__data {
+		text-align: center;
+	}
+
+	&__data + &__data {
+		margin-left: px-to-rems(20);
+	}
+}
+
+.infoContainer + .infoContainer {
+	margin-top: px-to-rems(20);
+}
